@@ -1,0 +1,16 @@
+name: Add issue to learning project
+
+on:
+  issues:
+    types:
+      - opened
+      
+jobs:
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@RELEASE_VERSION
+        with:
+          project-url: https://github.com/orgs/berbilfruit/projects/1
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
