@@ -12,5 +12,5 @@ jobs:
     steps:
       - uses: actions/add-to-project@960fbad431afda394cfcf8743445e741acd19e85
         with:
-          project-url: https://github.com/orgs/berbilfruit/projects/1
+          project-url: https://github.com/users/michael-berbilfruit/projects/1
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
